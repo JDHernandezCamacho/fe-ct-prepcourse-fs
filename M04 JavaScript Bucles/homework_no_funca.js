@@ -7,6 +7,7 @@ function obtenerMayor(x, y) {
    // Tu código:
    if (x === y) return x;
    return Math.max(x,y);
+   
 }
 
 function mayoriaDeEdad(edad) {
@@ -82,6 +83,7 @@ function colors(color) {
       default :
       return "Color not found";
    }
+
 }
 
 function esDiezOCinco(num) {
@@ -109,8 +111,9 @@ function esEntero(num) {
    // Ejemplo: (-10) ---> true
    // De lo contrario, retorna false.
    // Tu código:
-   if (num % 1 === 0) return true;
-   return false;
+   if (num % 2 === 0) return true;
+   else return false;
+
 }
 
 function fizzBuzz(num) {
@@ -119,12 +122,12 @@ function fizzBuzz(num) {
    // Si "num" es divisible entre 3 y 5 (ambos), retorna "fizzbuzz".
    // De lo contrario, retorna false.
    // Tu código:
-   if (num % 3 === 0 && num % 5 === 0){
-      return "fizzbuzz";
+   if (num % 3 === 0){
+      return "fizz";
    }else if (num % 5 === 0){
       return "buzz";
-   }else if (num % 3 === 0) {
-      return "fizz";
+   }else if (num % 3 === 0 && num % 5 === 0) {
+      return "fizzbuzz";
    }else return false;
 }
 
@@ -194,7 +197,6 @@ function doWhile(num) {
    let i = 1;
    do {
       num = num + 5;
-      i = i + 1;
    } while (i <= 8);
    return num;
 }
